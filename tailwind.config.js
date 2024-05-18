@@ -4,7 +4,7 @@ export default {
   theme: {
     fontFamily: {
       sans: [
-        "Inter",
+        "Manrope",
         "ui-sans-serif",
         "system-ui",
         "-apple-system",
@@ -20,6 +20,22 @@ export default {
         "Segoe UI Symbol",
         "Noto Color Emoji",
       ],
+    },
+    extend: {
+      keyframes: {
+        fadeIn: {
+          "0%": { opacity: 0 },
+          "100%": { opacity: 1 },
+        },
+        fadeOut: {
+          "0%": { opacity: 1 },
+          "100%": { opacity: 0 },
+        },
+      },
+      animation: {
+        fadeIn: "fadeIn 0.5s ease-in-out",
+        fadeOut: "fadeOut 0.5s ease-in-out",
+      },
     },
   },
   plugins: [
